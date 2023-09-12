@@ -135,16 +135,12 @@
 //   console.log(res);
 
 
-  // const obj = {
-  //   getData: function(n) {return null}
-  // } 
-  
-  // const res = obj
-  //   .getData()
-  //   ?.pop();
-  
-  // console.log(res);
+const obj = {
+  getData: function(n) {return null}
+} 
 
-const s = "I'm not really an object";
-s.message = "prove it!"
-console.log(s.message);
+const res = obj
+  .getData()
+  ?.pop();
+
+console.log(res);
