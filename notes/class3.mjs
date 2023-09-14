@@ -82,3 +82,10 @@
 // console.log(nums)
 // console.log(result)
 
+console.log(global.mistake);
+function oopsGlobal() {
+	mistake = "yup";
+}
+oopsGlobal();
+console.log(mistake);
+console.log(global.mistake);
