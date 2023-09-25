@@ -5,16 +5,15 @@ import {createServer} from 'net';
 // create a tcp ip server
 
 const handleData = (sock, data) => {
-    console.log('got', data)
+    console.log('got ' + data)
     sock.write('u sent ' + data)
 }
 
 
 const handleConnect = sock => {
     console.log('client connected')
-    sock.write('welcome')
+    sock.write('welcome!')
     sock.on('data', data => handleData(sock, data))
-    // sock.end()
 }
 
 
