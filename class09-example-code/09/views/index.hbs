@@ -1,0 +1,14 @@
+<form method="GET" action="">
+	minLength: <input type="number" name="minLength" value="">	
+	<input type="submit" value="filter">	
+</form>
+<ul>
+{{#each sneks}}
+	<li>{{name}}, {{length}}</li>
+{{/each}}
+</ul>
+<form method="POST" action="">
+	name: <input type="text" name="snakeName" value="">	
+	length: <input type="text" name="snakeLength" value="">	
+	<input type="submit" value="add">	
+</form>
